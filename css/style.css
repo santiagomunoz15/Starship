@@ -17,8 +17,8 @@ body {
     position: fixed;
     right: 0;
     height: 100vh;
-    width: 40%;
-    background-color: rgba(0, 0, 0, 0.8);
+    width: 180px;
+    background-color: rgba(0, 0, 0, 0.9);
     z-index: 1;
     padding: 30px;
     display: grid;
@@ -47,15 +47,20 @@ body {
 /* ///////////////////// */
 
 header {
+    background-image: url("../images/s24-rollout.jpg");
+    background-size: cover;
+    background-position: 57%;
+}
+
+.header-content {
     display: grid;  
     padding: 40px;
     grid-template-columns: 20% 25% 10% 25% 20%;
     grid-template-rows: 5% 90% 5%;
     height: 700px;
+    max-width: 1200px;
     place-content: center center;
-    background-image: url("../images/s24-rollout.jpg");
-    background-size: cover;
-    background-position: 57%;
+    margin: 0 auto;
 }
 
 .header-logo {
@@ -91,6 +96,7 @@ header h1 {
     font-weight: 200;
     grid-column: 3/4;
     color: #FFF;
+    padding: 0 50%;
 }
 
 img {
@@ -113,8 +119,8 @@ img {
     justify-content: center;
 }
 
-.stages {
-    max-width: 800px;
+.stages, .raptor-bottom {
+    max-width: 650px;
 }
 
 .intro-p {
@@ -230,19 +236,20 @@ p {
 }
 
 .raptor-bottom-container {
+    display: grid;
+    justify-items: center;
+}
+
+.raptor-bottom {
     padding: 60px 40px;
     padding-bottom: 90px;
     display: grid;
     gap: 40px;
 }
 
-.raptor-info {
-    max-width: 800px;
-}
-
 .raptor-fuel {
     display: grid;
-    grid-template-columns: 1fr 1fr;    
+    grid-template-columns: 150px 150px;    
     grid-template-rows: 1fr 50px 30px 150px;
     column-gap: 30px;
     place-content: center center;
@@ -304,7 +311,7 @@ p {
 .raptor-nozzle {
     grid-column: 1/3;
     background-color: #2B2B2B;
-    width: 40%;
+    width: 120px;
     display: grid;
     margin: 0 auto;
     transform: perspective(10px) rotateX(1deg);
@@ -320,4 +327,8 @@ p {
 .raptor-nozzle span {
     width: 100px;
     padding: 0;
+}
+
+.raptor-sf video {
+    width: 100%;
 }
