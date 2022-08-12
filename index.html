@@ -13,12 +13,26 @@
     <meta name="theme-color" content="#bababa" />
 </head>
 <body>
+
+    <div class="side-menu" id="side-menu">
+        <figure onclick="closeMenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="24" fill="#FFF"><path d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm0 2C4.477 20 0 15.523 0 10S4.477 0 10 0s10 4.477 10 10-4.477 10-10 10z"></path><path d="M11.414 10l2.829 2.828a1 1 0 0 1-1.415 1.415L10 11.414l-2.828 2.829a1 1 0 1 1-1.415-1.415L8.586 10 5.757 7.172a1 1 0 0 1 1.415-1.415L10 8.586l2.828-2.829a1 1 0 0 1 1.415 1.415L11.414 10z"></path></svg>
+        </figure>
+
+        <div class="side-menu-li">
+            <a target="_blank" href="https://www.youtube.com/watch?v=z9eoubnO-pE">SN15 10km Test</a>
+            <a target="_blank" href="https://www.youtube.com/watch?v=3N7L8Xhkzqo">Starship Update</a>
+            <a target="_blank" href="https://www.youtube.com/watch?v=05Yiw7_JTXY">Booster 7 Explosion</a>
+            <a target="_blank" href="https://www.youtube.com/watch?v=tzswGOA8wOs">Raptor 2 Engine</a>
+        </div>
+    </div>
+
     <header>
         <figure class="header-logo">
             <img src="./images/spacex-black-logo.png" alt="">
         </figure>
 
-        <figure class="header-ham">
+        <figure class="header-ham" onclick="openMenu()">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 -7 24 24" width="24" fill="currentColor"><path d="M1 0h12a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2zm0 8h12a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2zm0-4h12a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2z"></path></svg>
         </figure>
 
@@ -103,13 +117,14 @@
     
                 <div class="raptor-mix"></div>
                 <div class="raptor-chamber"></div>
-                <div class="raptor-nozzle"></div>
+                <div class="raptor-nozzle"> 
+                    <span>Raptor 2</span>
+                </div>
             </div>
-
-
-
         </div>
+    </section>
 
+    <section class="test-campaign">
 
     </section>
 
