@@ -343,6 +343,8 @@ p {
     gap: 5px;
     grid-template-rows: 15px 2px 20px 1fr;
     padding: 30px 40px;
+    max-width: 650px;
+    margin: 0 auto;
 }
 
 .raptor-sf a {
